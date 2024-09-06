@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:9473").setExtent([1081346.013088, -4079472.942970, 1113662.609582, -4062847.641884]);
+//ol.proj.get("EPSG:9473").setExtent([1051377.773730, -4106445.692686, 1245277.352693, -4006693.886168]);
 var wms_layers = [];
 
 
@@ -224,45 +224,45 @@ var lyr_RORestructureOverlay_14 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/RORestructureOverlay_14.png" /> RO-Restructure Overlay'
             });
-var format_Zoning_15 = new ol.format.GeoJSON();
-var features_Zoning_15 = format_Zoning_15.readFeatures(json_Zoning_15, 
+var format_ZonedAreas_15 = new ol.format.GeoJSON();
+var features_ZonedAreas_15 = format_ZonedAreas_15.readFeatures(json_ZonedAreas_15, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:9473'});
-var jsonSource_Zoning_15 = new ol.source.Vector({
+var jsonSource_ZonedAreas_15 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Zoning_15.addFeatures(features_Zoning_15);
-var lyr_Zoning_15 = new ol.layer.Vector({
+jsonSource_ZonedAreas_15.addFeatures(features_ZonedAreas_15);
+var lyr_ZonedAreas_15 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Zoning_15, 
-                style: style_Zoning_15,
-                popuplayertitle: "Zoning",
+                source:jsonSource_ZonedAreas_15, 
+                style: style_ZonedAreas_15,
+                popuplayertitle: "Zoned Areas",
                 interactive: true,
-    title: 'Zoning<br />\
-    <img src="styles/legend/Zoning_15_0.png" /> COMPREHENSIVE DEVELOPMENT ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_1.png" /> COMPREHENSIVE DEVELOPMENT ZONE - SCHEDULE 2<br />\
-    <img src="styles/legend/Zoning_15_2.png" /> COMPREHENSIVE DEVELOPMENT ZONE - SCHEDULE 3<br />\
-    <img src="styles/legend/Zoning_15_3.png" /> GENERAL RESIDENTIAL ZONE<br />\
-    <img src="styles/legend/Zoning_15_4.png" /> GENERAL RESIDENTIAL ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_5.png" /> LOW DENSITY RESIDENTIAL ZONE<br />\
-    <img src="styles/legend/Zoning_15_6.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_7.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 2<br />\
-    <img src="styles/legend/Zoning_15_8.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 3<br />\
-    <img src="styles/legend/Zoning_15_9.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 4<br />\
-    <img src="styles/legend/Zoning_15_10.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 5<br />\
-    <img src="styles/legend/Zoning_15_11.png" /> MIXED USE ZONE<br />\
-    <img src="styles/legend/Zoning_15_12.png" /> MIXED USE ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_13.png" /> MIXED USE ZONE - SCHEDULE 2<br />\
-    <img src="styles/legend/Zoning_15_14.png" /> NEIGHBOURHOOD RESIDENTIAL ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_15.png" /> NEIGHBOURHOOD RESIDENTIAL ZONE - SCHEDULE 2<br />\
-    <img src="styles/legend/Zoning_15_16.png" /> NEIGHBOURHOOD RESIDENTIAL ZONE - SCHEDULE 3<br />\
-    <img src="styles/legend/Zoning_15_17.png" /> RESIDENTIAL GROWTH ZONE<br />\
-    <img src="styles/legend/Zoning_15_18.png" /> RESIDENTIAL GROWTH ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_19.png" /> RESIDENTIAL GROWTH ZONE - SCHEDULE 2<br />\
-    <img src="styles/legend/Zoning_15_20.png" /> RESIDENTIAL GROWTH ZONE - SCHEDULE 3<br />\
-    <img src="styles/legend/Zoning_15_21.png" /> TOWNSHIP ZONE<br />\
-    <img src="styles/legend/Zoning_15_22.png" /> URBAN GROWTH ZONE<br />\
-    <img src="styles/legend/Zoning_15_23.png" /> URBAN GROWTH ZONE - SCHEDULE 1<br />\
-    <img src="styles/legend/Zoning_15_24.png" /> URBAN GROWTH ZONE - SCHEDULE 2<br />'
+    title: 'Zoned Areas<br />\
+    <img src="styles/legend/ZonedAreas_15_0.png" /> COMPREHENSIVE DEVELOPMENT ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_1.png" /> COMPREHENSIVE DEVELOPMENT ZONE - SCHEDULE 2<br />\
+    <img src="styles/legend/ZonedAreas_15_2.png" /> COMPREHENSIVE DEVELOPMENT ZONE - SCHEDULE 3<br />\
+    <img src="styles/legend/ZonedAreas_15_3.png" /> GENERAL RESIDENTIAL ZONE<br />\
+    <img src="styles/legend/ZonedAreas_15_4.png" /> GENERAL RESIDENTIAL ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_5.png" /> LOW DENSITY RESIDENTIAL ZONE<br />\
+    <img src="styles/legend/ZonedAreas_15_6.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_7.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 2<br />\
+    <img src="styles/legend/ZonedAreas_15_8.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 3<br />\
+    <img src="styles/legend/ZonedAreas_15_9.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 4<br />\
+    <img src="styles/legend/ZonedAreas_15_10.png" /> LOW DENSITY RESIDENTIAL ZONE - SCHEDULE 5<br />\
+    <img src="styles/legend/ZonedAreas_15_11.png" /> MIXED USE ZONE<br />\
+    <img src="styles/legend/ZonedAreas_15_12.png" /> MIXED USE ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_13.png" /> MIXED USE ZONE - SCHEDULE 2<br />\
+    <img src="styles/legend/ZonedAreas_15_14.png" /> NEIGHBOURHOOD RESIDENTIAL ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_15.png" /> NEIGHBOURHOOD RESIDENTIAL ZONE - SCHEDULE 2<br />\
+    <img src="styles/legend/ZonedAreas_15_16.png" /> NEIGHBOURHOOD RESIDENTIAL ZONE - SCHEDULE 3<br />\
+    <img src="styles/legend/ZonedAreas_15_17.png" /> RESIDENTIAL GROWTH ZONE<br />\
+    <img src="styles/legend/ZonedAreas_15_18.png" /> RESIDENTIAL GROWTH ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_19.png" /> RESIDENTIAL GROWTH ZONE - SCHEDULE 2<br />\
+    <img src="styles/legend/ZonedAreas_15_20.png" /> RESIDENTIAL GROWTH ZONE - SCHEDULE 3<br />\
+    <img src="styles/legend/ZonedAreas_15_21.png" /> TOWNSHIP ZONE<br />\
+    <img src="styles/legend/ZonedAreas_15_22.png" /> URBAN GROWTH ZONE<br />\
+    <img src="styles/legend/ZonedAreas_15_23.png" /> URBAN GROWTH ZONE - SCHEDULE 1<br />\
+    <img src="styles/legend/ZonedAreas_15_24.png" /> URBAN GROWTH ZONE - SCHEDULE 2<br />'
         });
 var format_LGABOUNDARY_16 = new ol.format.GeoJSON();
 var features_LGABOUNDARY_16 = format_LGABOUNDARY_16.readFeatures(json_LGABOUNDARY_16, 
@@ -345,7 +345,7 @@ var group_Strategic = new ol.layer.Group({
                                 fold: "open",
                                 title: "Strategic"});
 var group_Zoning = new ol.layer.Group({
-                                layers: [lyr_Zoning_15,],
+                                layers: [],
                                 fold: "open",
                                 title: "Zoning"});
 var group_LockyerValley = new ol.layer.Group({
@@ -428,6 +428,10 @@ var group_Boundaries = new ol.layer.Group({
                                 layers: [lyr_LGABOUNDARY_16,lyr_ParcelBoundaryBendigo_17,lyr_ParcelBoundaryBallarat_18,lyr_TopLeadsZoned_19,],
                                 fold: "open",
                                 title: "Boundaries"});
+var group_PlanningSchemeZones = new ol.layer.Group({
+                                layers: [lyr_ZonedAreas_15,],
+                                fold: "open",
+                                title: "Planning Scheme Zones"});
 var group_NoteToDD = new ol.layer.Group({
                                 layers: [lyr_RXORoadClosureOverlay_7,lyr_PAOPublicAcquisitionOverlay_8,lyr_BMOBushfire_Management_Overlay_9,lyr_BAOBufferAreaOverlay_10,lyr_ESOEnvironmental_Significance_Overlay_11,lyr_SLOSignificantLandscapeOverlay_12,lyr_SROStateResourceOverlay_13,lyr_RORestructureOverlay_14,],
                                 fold: "open",
@@ -453,8 +457,8 @@ var group_group2 = new ol.layer.Group({
                                 fold: "open",
                                 title: "group2"});
 
-lyr_ESRISatelliteArcGISWorld_Imagery_0.setVisible(true);lyr_waterwaysbuffered_1.setVisible(false);lyr_FOFloodwayOverlay_2.setVisible(false);lyr_HOHeritageOverlay_3.setVisible(false);lyr_LSIOLandSubjecttoInundationOverlay_4.setVisible(false);lyr_VPOVegetationProtectionOverlay_5.setVisible(false);lyr_EasementsNOTDEDUCTED_6.setVisible(false);lyr_RXORoadClosureOverlay_7.setVisible(false);lyr_PAOPublicAcquisitionOverlay_8.setVisible(false);lyr_BMOBushfire_Management_Overlay_9.setVisible(false);lyr_BAOBufferAreaOverlay_10.setVisible(false);lyr_ESOEnvironmental_Significance_Overlay_11.setVisible(false);lyr_SLOSignificantLandscapeOverlay_12.setVisible(false);lyr_SROStateResourceOverlay_13.setVisible(false);lyr_RORestructureOverlay_14.setVisible(false);lyr_Zoning_15.setVisible(false);lyr_LGABOUNDARY_16.setVisible(true);lyr_ParcelBoundaryBendigo_17.setVisible(false);lyr_ParcelBoundaryBallarat_18.setVisible(false);lyr_TopLeadsZoned_19.setVisible(true);
-var layersList = [lyr_ESRISatelliteArcGISWorld_Imagery_0,group_Deduct,group_NoteToDD,group_Zoning,group_Boundaries];
+lyr_ESRISatelliteArcGISWorld_Imagery_0.setVisible(true);lyr_waterwaysbuffered_1.setVisible(false);lyr_FOFloodwayOverlay_2.setVisible(false);lyr_HOHeritageOverlay_3.setVisible(false);lyr_LSIOLandSubjecttoInundationOverlay_4.setVisible(false);lyr_VPOVegetationProtectionOverlay_5.setVisible(false);lyr_EasementsNOTDEDUCTED_6.setVisible(false);lyr_RXORoadClosureOverlay_7.setVisible(false);lyr_PAOPublicAcquisitionOverlay_8.setVisible(false);lyr_BMOBushfire_Management_Overlay_9.setVisible(false);lyr_BAOBufferAreaOverlay_10.setVisible(false);lyr_ESOEnvironmental_Significance_Overlay_11.setVisible(false);lyr_SLOSignificantLandscapeOverlay_12.setVisible(false);lyr_SROStateResourceOverlay_13.setVisible(false);lyr_RORestructureOverlay_14.setVisible(false);lyr_ZonedAreas_15.setVisible(false);lyr_LGABOUNDARY_16.setVisible(true);lyr_ParcelBoundaryBendigo_17.setVisible(false);lyr_ParcelBoundaryBallarat_18.setVisible(false);lyr_TopLeadsZoned_19.setVisible(true);
+var layersList = [lyr_ESRISatelliteArcGISWorld_Imagery_0,group_Deduct,group_NoteToDD,group_PlanningSchemeZones,group_Boundaries];
 lyr_waterwaysbuffered_1.set('fieldAliases', {'id': 'id', 'layer': 'layer', 'path': 'path', });
 lyr_FOFloodwayOverlay_2.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'SCHEME_COD': 'SCHEME_COD', 'LGA_CODE': 'LGA_CODE', 'LGA': 'LGA', 'ZONE_NUM': 'ZONE_NUM', 'ZONE_STATU': 'ZONE_STATU', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCR': 'ZONE_DESCR', 'GAZ_BEGIN_': 'GAZ_BEGIN_', 'PFI_CREATE': 'PFI_CREATE', 'UFI': 'UFI', 'UFI_CREATE': 'UFI_CREATE', 'ZONE_CODE_': 'ZONE_CODE_', 'ZONE_COD_1': 'ZONE_COD_1', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
 lyr_HOHeritageOverlay_3.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'SCHEME_COD': 'SCHEME_COD', 'LGA_CODE': 'LGA_CODE', 'LGA': 'LGA', 'ZONE_NUM': 'ZONE_NUM', 'ZONE_STATU': 'ZONE_STATU', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCR': 'ZONE_DESCR', 'GAZ_BEGIN_': 'GAZ_BEGIN_', 'PFI_CREATE': 'PFI_CREATE', 'UFI': 'UFI', 'UFI_CREATE': 'UFI_CREATE', 'ZONE_CODE_': 'ZONE_CODE_', 'ZONE_COD_1': 'ZONE_COD_1', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
@@ -469,7 +473,7 @@ lyr_ESOEnvironmental_Significance_Overlay_11.set('fieldAliases', {'fid': 'fid', 
 lyr_SLOSignificantLandscapeOverlay_12.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'SCHEME_COD': 'SCHEME_COD', 'LGA_CODE': 'LGA_CODE', 'LGA': 'LGA', 'ZONE_NUM': 'ZONE_NUM', 'ZONE_STATU': 'ZONE_STATU', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCR': 'ZONE_DESCR', 'GAZ_BEGIN_': 'GAZ_BEGIN_', 'PFI_CREATE': 'PFI_CREATE', 'UFI': 'UFI', 'UFI_CREATE': 'UFI_CREATE', 'ZONE_CODE_': 'ZONE_CODE_', 'ZONE_COD_1': 'ZONE_COD_1', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
 lyr_SROStateResourceOverlay_13.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'SCHEME_COD': 'SCHEME_COD', 'LGA_CODE': 'LGA_CODE', 'LGA': 'LGA', 'ZONE_NUM': 'ZONE_NUM', 'ZONE_STATU': 'ZONE_STATU', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCR': 'ZONE_DESCR', 'GAZ_BEGIN_': 'GAZ_BEGIN_', 'PFI_CREATE': 'PFI_CREATE', 'UFI': 'UFI', 'UFI_CREATE': 'UFI_CREATE', 'ZONE_CODE_': 'ZONE_CODE_', 'ZONE_COD_1': 'ZONE_COD_1', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
 lyr_RORestructureOverlay_14.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'SCHEME_COD': 'SCHEME_COD', 'LGA_CODE': 'LGA_CODE', 'LGA': 'LGA', 'ZONE_NUM': 'ZONE_NUM', 'ZONE_STATU': 'ZONE_STATU', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCR': 'ZONE_DESCR', 'GAZ_BEGIN_': 'GAZ_BEGIN_', 'PFI_CREATE': 'PFI_CREATE', 'UFI': 'UFI', 'UFI_CREATE': 'UFI_CREATE', 'ZONE_CODE_': 'ZONE_CODE_', 'ZONE_COD_1': 'ZONE_COD_1', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
-lyr_Zoning_15.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'LGA': 'LGA', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCRIPTION': 'ZONE_DESCRIPTION', });
+lyr_ZonedAreas_15.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'PFI': 'PFI', 'LGA': 'LGA', 'ZONE_CODE': 'ZONE_CODE', 'ZONE_DESCRIPTION': 'ZONE_DESCRIPTION', });
 lyr_LGABOUNDARY_16.set('fieldAliases', {'LGA_CODE24': 'LGA_CODE24', 'LGA_NAME24': 'LGA_NAME24', 'STE_CODE21': 'STE_CODE21', 'STE_NAME21': 'STE_NAME21', 'AUS_CODE21': 'AUS_CODE21', 'AUS_NAME21': 'AUS_NAME21', 'AREASQKM': 'AREASQKM', 'LOCI_URI21': 'LOCI_URI21', 'Data_Total target 2051': 'Data_Total target 2051', });
 lyr_ParcelBoundaryBendigo_17.set('fieldAliases', {'fid': 'fid', 'PARCEL_PFI': 'PARCEL_PFI', 'PARCEL_SPI': 'PARCEL_SPI', 'PC_LGAC': 'PC_LGAC', 'PC_PLANNO': 'PC_PLANNO', 'PC_LOTNO': 'PC_LOTNO', 'PARC_ACCLT': 'PARC_ACCLT', 'PC_ALL': 'PC_ALL', 'PC_BLK': 'PC_BLK', 'PC_PNUM': 'PC_PNUM', 'Gross HA': 'Gross HA', });
 lyr_ParcelBoundaryBallarat_18.set('fieldAliases', {'fid': 'fid', 'PARCEL_PFI': 'PARCEL_PFI', 'PARCEL_SPI': 'PARCEL_SPI', 'PC_LGAC': 'PC_LGAC', 'PC_PLANNO': 'PC_PLANNO', 'PC_LOTNO': 'PC_LOTNO', 'PARC_ACCLT': 'PARC_ACCLT', 'PC_ALL': 'PC_ALL', 'PC_BLK': 'PC_BLK', 'PC_PNUM': 'PC_PNUM', 'Gross HA': 'Gross HA', });
@@ -488,7 +492,7 @@ lyr_ESOEnvironmental_Significance_Overlay_11.set('fieldImages', {'fid': 'TextEdi
 lyr_SLOSignificantLandscapeOverlay_12.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'PFI': 'TextEdit', 'SCHEME_COD': 'TextEdit', 'LGA_CODE': 'TextEdit', 'LGA': 'TextEdit', 'ZONE_NUM': 'TextEdit', 'ZONE_STATU': 'TextEdit', 'ZONE_CODE': 'TextEdit', 'ZONE_DESCR': 'TextEdit', 'GAZ_BEGIN_': 'TextEdit', 'PFI_CREATE': 'TextEdit', 'UFI': 'TextEdit', 'UFI_CREATE': 'TextEdit', 'ZONE_CODE_': 'TextEdit', 'ZONE_COD_1': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
 lyr_SROStateResourceOverlay_13.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'PFI': 'TextEdit', 'SCHEME_COD': 'TextEdit', 'LGA_CODE': 'TextEdit', 'LGA': 'TextEdit', 'ZONE_NUM': 'TextEdit', 'ZONE_STATU': 'TextEdit', 'ZONE_CODE': 'TextEdit', 'ZONE_DESCR': 'TextEdit', 'GAZ_BEGIN_': 'TextEdit', 'PFI_CREATE': 'TextEdit', 'UFI': 'TextEdit', 'UFI_CREATE': 'TextEdit', 'ZONE_CODE_': 'TextEdit', 'ZONE_COD_1': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
 lyr_RORestructureOverlay_14.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'PFI': 'TextEdit', 'SCHEME_COD': 'TextEdit', 'LGA_CODE': 'TextEdit', 'LGA': 'TextEdit', 'ZONE_NUM': 'TextEdit', 'ZONE_STATU': 'TextEdit', 'ZONE_CODE': 'TextEdit', 'ZONE_DESCR': 'TextEdit', 'GAZ_BEGIN_': 'TextEdit', 'PFI_CREATE': 'TextEdit', 'UFI': 'TextEdit', 'UFI_CREATE': 'TextEdit', 'ZONE_CODE_': 'TextEdit', 'ZONE_COD_1': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
-lyr_Zoning_15.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'PFI': 'TextEdit', 'LGA': 'TextEdit', 'ZONE_CODE': 'TextEdit', 'ZONE_DESCRIPTION': 'TextEdit', });
+lyr_ZonedAreas_15.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'PFI': 'TextEdit', 'LGA': 'TextEdit', 'ZONE_CODE': 'TextEdit', 'ZONE_DESCRIPTION': 'TextEdit', });
 lyr_LGABOUNDARY_16.set('fieldImages', {'LGA_CODE24': 'TextEdit', 'LGA_NAME24': 'TextEdit', 'STE_CODE21': 'TextEdit', 'STE_NAME21': 'TextEdit', 'AUS_CODE21': 'TextEdit', 'AUS_NAME21': 'TextEdit', 'AREASQKM': 'TextEdit', 'LOCI_URI21': 'TextEdit', 'Data_Total target 2051': 'Range', });
 lyr_ParcelBoundaryBendigo_17.set('fieldImages', {'fid': 'TextEdit', 'PARCEL_PFI': 'TextEdit', 'PARCEL_SPI': 'TextEdit', 'PC_LGAC': 'TextEdit', 'PC_PLANNO': 'TextEdit', 'PC_LOTNO': 'TextEdit', 'PARC_ACCLT': 'TextEdit', 'PC_ALL': 'TextEdit', 'PC_BLK': 'TextEdit', 'PC_PNUM': 'TextEdit', 'Gross HA': 'TextEdit', });
 lyr_ParcelBoundaryBallarat_18.set('fieldImages', {'fid': 'TextEdit', 'PARCEL_PFI': 'TextEdit', 'PARCEL_SPI': 'TextEdit', 'PC_LGAC': 'TextEdit', 'PC_PLANNO': 'TextEdit', 'PC_LOTNO': 'TextEdit', 'PARC_ACCLT': 'TextEdit', 'PC_ALL': 'TextEdit', 'PC_BLK': 'TextEdit', 'PC_PNUM': 'TextEdit', 'Gross HA': 'TextEdit', });
@@ -507,10 +511,10 @@ lyr_ESOEnvironmental_Significance_Overlay_11.set('fieldLabels', {'fid': 'no labe
 lyr_SLOSignificantLandscapeOverlay_12.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'PFI': 'no label', 'SCHEME_COD': 'no label', 'LGA_CODE': 'no label', 'LGA': 'no label', 'ZONE_NUM': 'no label', 'ZONE_STATU': 'no label', 'ZONE_CODE': 'no label', 'ZONE_DESCR': 'no label', 'GAZ_BEGIN_': 'no label', 'PFI_CREATE': 'no label', 'UFI': 'no label', 'UFI_CREATE': 'no label', 'ZONE_CODE_': 'no label', 'ZONE_COD_1': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
 lyr_SROStateResourceOverlay_13.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'PFI': 'no label', 'SCHEME_COD': 'no label', 'LGA_CODE': 'no label', 'LGA': 'no label', 'ZONE_NUM': 'no label', 'ZONE_STATU': 'no label', 'ZONE_CODE': 'no label', 'ZONE_DESCR': 'no label', 'GAZ_BEGIN_': 'no label', 'PFI_CREATE': 'no label', 'UFI': 'no label', 'UFI_CREATE': 'no label', 'ZONE_CODE_': 'no label', 'ZONE_COD_1': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
 lyr_RORestructureOverlay_14.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'PFI': 'no label', 'SCHEME_COD': 'no label', 'LGA_CODE': 'no label', 'LGA': 'no label', 'ZONE_NUM': 'no label', 'ZONE_STATU': 'no label', 'ZONE_CODE': 'no label', 'ZONE_DESCR': 'no label', 'GAZ_BEGIN_': 'no label', 'PFI_CREATE': 'no label', 'UFI': 'no label', 'UFI_CREATE': 'no label', 'ZONE_CODE_': 'no label', 'ZONE_COD_1': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
-lyr_Zoning_15.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'PFI': 'no label', 'LGA': 'inline label - always visible', 'ZONE_CODE': 'inline label - always visible', 'ZONE_DESCRIPTION': 'inline label - always visible', });
+lyr_ZonedAreas_15.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID': 'hidden field', 'PFI': 'hidden field', 'LGA': 'inline label - always visible', 'ZONE_CODE': 'inline label - always visible', 'ZONE_DESCRIPTION': 'inline label - always visible', });
 lyr_LGABOUNDARY_16.set('fieldLabels', {'LGA_CODE24': 'no label', 'LGA_NAME24': 'no label', 'STE_CODE21': 'no label', 'STE_NAME21': 'no label', 'AUS_CODE21': 'no label', 'AUS_NAME21': 'no label', 'AREASQKM': 'no label', 'LOCI_URI21': 'no label', 'Data_Total target 2051': 'no label', });
-lyr_ParcelBoundaryBendigo_17.set('fieldLabels', {'fid': 'no label', 'PARCEL_PFI': 'no label', 'PARCEL_SPI': 'no label', 'PC_LGAC': 'no label', 'PC_PLANNO': 'inline label - visible with data', 'PC_LOTNO': 'inline label - visible with data', 'PARC_ACCLT': 'no label', 'PC_ALL': 'no label', 'PC_BLK': 'no label', 'PC_PNUM': 'no label', 'Gross HA': 'inline label - always visible', });
-lyr_ParcelBoundaryBallarat_18.set('fieldLabels', {'fid': 'no label', 'PARCEL_PFI': 'no label', 'PARCEL_SPI': 'no label', 'PC_LGAC': 'no label', 'PC_PLANNO': 'inline label - visible with data', 'PC_LOTNO': 'inline label - visible with data', 'PARC_ACCLT': 'no label', 'PC_ALL': 'no label', 'PC_BLK': 'no label', 'PC_PNUM': 'no label', 'Gross HA': 'inline label - visible with data', });
+lyr_ParcelBoundaryBendigo_17.set('fieldLabels', {'fid': 'hidden field', 'PARCEL_PFI': 'hidden field', 'PARCEL_SPI': 'hidden field', 'PC_LGAC': 'hidden field', 'PC_PLANNO': 'inline label - visible with data', 'PC_LOTNO': 'inline label - visible with data', 'PARC_ACCLT': 'hidden field', 'PC_ALL': 'hidden field', 'PC_BLK': 'hidden field', 'PC_PNUM': 'hidden field', 'Gross HA': 'inline label - always visible', });
+lyr_ParcelBoundaryBallarat_18.set('fieldLabels', {'fid': 'hidden field', 'PARCEL_PFI': 'hidden field', 'PARCEL_SPI': 'hidden field', 'PC_LGAC': 'hidden field', 'PC_PLANNO': 'inline label - visible with data', 'PC_LOTNO': 'inline label - visible with data', 'PARC_ACCLT': 'hidden field', 'PC_ALL': 'hidden field', 'PC_BLK': 'hidden field', 'PC_PNUM': 'hidden field', 'Gross HA': 'inline label - visible with data', });
 lyr_TopLeadsZoned_19.set('fieldLabels', {'Gross HA': 'inline label - visible with data', 'LGA': 'inline label - visible with data', 'ZONE_CODE': 'inline label - visible with data', 'Zone 1 Ha': 'inline label - visible with data', 'NDH.': 'inline label - visible with data', 'Address': 'inline label - visible with data', 'Lead Link': 'inline label - visible with data', 'P_Lot size': 'inline label - always visible', });
 lyr_TopLeadsZoned_19.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
